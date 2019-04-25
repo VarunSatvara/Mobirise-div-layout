@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            position: relative;
+        }
+
+        .section1 {
+            overflow: auto;
+            width: 100%;
+            margin: 0;
+            position: relative;
+            background-color: aiceblue;
+        }
+
+        .title {
+            float: left;
+            font-size: 1em;
+            color: darkgray;
+            padding: 15px;
+        }
+
+        .title h1 {
+            margin: 0;
+        }
+
+        .parent {
+            float: right;
+            padding: 15px;
+        }
+
+        .section2 {
+            height: 90%;
+            width: 100%;
+            margin: 0;
+            position: relative;
+            background-attachment: fixed;
+            background-image: url(images/f);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .parent h3 {
+            padding: 10px;
+            display: inline-block;
+            margin: 0;
+            color: darkgray;
+        }
+
+        .content {
+            height: 60%;
+            width: 60%;
+            top: 50px;
+            bottom: 0;
+            right: 0;
+            left: 70px;
+            position: absolute;
+
+        }
+
+        .content h1 {
+            color: aliceblue;
+            font-size: 3em;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .content p {
+            color: aliceblue;
+            font-size: 2em;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .content h2 {
+            color: aliceblue;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .about {
+            width: 120px;
+            background-color: orange;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .about h3 {
+            color: aliceblue;
+        }
+
+        .yellow {
+            padding-left: 10px;
+            color: yellow;
+            font-family: cursive;
+        }
+
+        .section3 {
+            padding: 70px;
+        }
+
+        .heading h2 {
+            width: 100%;
+            font-size: 2em;
+            font-weight: 100;
+            text-align: center;
+            color: #232323;
+            font-family: 'Dosis', sans-serif;
+            text-decoration-line: underline;
+            margin: 0;
+        }
+
+        .heading p {
+            width: 90%;
+            font-size: 22px;
+            margin: auto;
+            color: #232323;
+            font-family: 'Dosis', sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .box {
+            height: 40%;
+            width: 90%;
+            margin: auto;
+            overflow: auto;
+            margin-top: 70px;
+        }
+
+
+        .concepting {
+            width: 22%;
+            float: left;
+            padding: 10px;
+
+        }
+
+        .UI {
+            width: 22%;
+            float: left;
+            padding: 10px;
+        }
+
+        .VISUALDESIGN {
+            width: 22%;
+            float: left;
+            padding: 10px;
+        }
+
+        .INTERACATION {
+            width: 22%;
+            float: left;
+            padding: 10px;
+        }
+
+        .concepting h2 {
+            color: #232323;
+            font-weight: 560;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        .concepting p {
+            color: #232323;
+            font-weight: 200;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        .UI h2 {
+            color: #232323;
+            font-weight: 560;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        .UI p {
+            color: #232323;
+            font-weight: 200;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        .VISUALDESIGN h2 {
+            color: #232323;
+            font-weight: 560;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        .VISUALDESIGN p {
+            color: #232323;
+            font-weight: 200;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        .INTERACATION h2 {
+            color: #232323;
+            font-weight: 560;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        .INTERACATION p {
+            color: #232323;
+            font-weight: 200;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        .font {
+            font-size: 50px;
+        }
+
+        .section4 {
+            width: 100%;
+            overflow: auto;
+            position: relative;
+            margin: 0;
+        }
+
+        .clients {
+            width: 25%;
+            float: left;
+            background-color: darkgray;
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+        }
+
+        .award {
+            width: 25%;
+            float: left;
+            background-color: gainsboro;
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .hour {
+            width: 25%;
+            float: left;
+            background-color: darkgray;
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .project {
+            width: 25%;
+            float: left;
+            background-color: gainsboro;
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+        }
+
+        .fontsize {
+            padding: 3px;
+            font-size: 70px;
+            margin: 0;
+        }
+
+        .clients h2 {
+            padding: 3px;
+            margin: 0;
+        }
+
+        .clients p {
+            padding: 3px;
+            margin: 0;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .hour h2 {
+            padding: 3px;
+            margin: 0;
+        }
+
+        .hour p {
+            padding: 3px;
+            margin: 0;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+
+        .award h2 {
+            padding: 3px;
+            margin: 0;
+        }
+
+        .award p {
+            padding: 3px;
+            margin: 0;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .project h2 {
+            padding: 3px;
+            margin: 0;
+        }
+
+        .project p {
+            padding: 3px;
+            margin: 0;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="section1">
+            <div class="title">
+                <h1>MOBIRISE</h1>
+            </div>
+            <div class="parent">
+                <h3>HTMLResumeTemplate</h3>
+                <h3>DemoPages</h3>
+                <h3>MoreTemplate</h3>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="content">
+                <h1>HELLO</h1>
+                <P>I Am Mark and<span class="yellow">Designer</span> </P>
+                <h2>SPECIALIZED IN DESIGN AND PHOTOGRAPHY</h2>
+                <button type="button" class="about">
+                    <h3>About me</h3>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="heading">
+            <h2>I'M SPECIALIZED IN</h2>
+            <p>Committed and energetic professional photographer with 7+ years' extensive experience in custom-made and specialized photography</p>
+        </div>
+        <div class="box">
+            <div class="concepting">
+                <div class="font"><i class="far fa-edit"></i></div>
+                <h2> CONCEPTING</h2>
+                <p>Creative digital photographer, passionate about digital photography of several kinds, variations, acquired more than 7 years professional photography experience in HTML Template
+                </p>
+            </div>
+            <div class="UI">
+                <div class="font"><i class="far fa-credit-card"></i></div>
+                <h2>UI/UX</h2>
+                <p>Worked full time with the US Army, as a participant of the Personnel division, yet finished my time using HTML Resume Template, operating in the logistics area</p>
+            </div>
+            <div class="VISUALDESIGN">
+                <div class="font"><i class="fas fa-chart-line"></i></div>
+                <h2>VISUAL DESIGN</h2>
+                <p>Oversaw all aspects of workshop job as simple HTML
+                    resume developer and organisation administration
+                    consisting of economic, imaginative and also customer service processes</p>
+            </div>
+            <div class="INTERACATION">
+                <div class="font"><i class="far fa-thumbs-up"></i></div>
+                <h2>INTERACTION</h2>
+                <p>Familiar with various kinds of photography consisting
+                    of fashion, wild animals and undersea due to HTML Resume Template,
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <div class="clients">
+            <div class="fontsize"><i class="fas fa-user-friends"></i></div>
+            <h2>Clients</h2>
+            <p>44</p>
+        </div>
+        <div class="award">
+            <div class="fontsize"><i class="fas fa-rocket"></i></div>
+            <h2>Award Winner</h2>
+            <p>7</p>
+        </div>
+        <div class="hour">
+            <div class="fontsize"><i class="far fa-clock"></i></div>
+            <h2>Hourd Worked</h2>
+            <p>600</p>
+
+        </div>
+        <div class="project">
+            <div class="fontsize"><i class="fas fa-star-of-david"></i></div>
+            <h2>Project Completed</h2>
+            <p>32</p>
+        </div>
+    </div>
+</body>
+
+</html>
