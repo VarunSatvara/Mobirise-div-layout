@@ -139,7 +139,6 @@
         }
 
         .box {
-            height: 40%;
             width: 90%;
             margin: auto;
             overflow: auto;
@@ -225,7 +224,6 @@
         .section4 {
             width: 100%;
             overflow: auto;
-            position: relative;
             margin: 0;
         }
 
@@ -578,64 +576,71 @@
         }
 
         .section6 {
-            height: 100%;
             width: 100%;
-            margin-top: 50px;
             background-color: gainsboro;
-            position: relative;
+            overflow: auto;
+            margin: 0;
         }
 
         .document {
             width: 50%;
-            top: 0;
-            left: 0;
-            position: absolute;
+            float: left;
             margin: 0;
-            padding: 30px;
         }
 
         .document h1 {
-            font-size: 3em;
-            font-family: monospace;
+            font-family: "Dosis", sans-serif;
+            font-size: 23px;
+            color: #232323;
+            line-height: 50px;
+            font-weight: 300;
             margin: 0;
-            padding: 7px;
+            padding: 15px;
+
         }
 
         .document h2 {
-            font-weight: 100;
-            font-size: 2em;
-            font-family: monospace;
+            font-family: "Dosis", sans-serif;
+            font-size: 23px;
+            color: #232323;
+            line-height: 30px;
+            font-weight: 300;
             margin: 0;
-            padding: 7px;
+            padding: 15px;
+
+        }
+
+        .document h3 {
+            font-family: "Dosis", sans-serif;
+            font-size: 16px;
+            color: #232323;
+            line-height: 26px;
+            font-weight: 300;
+            margin: 0;
+            padding: 15px;
         }
 
         .document p {
-            font-weight: 100;
-            font-size: 18px;
-            font-family: sans-serif;
+            font-family: "Dosis", sans-serif;
+            font-size: 16px;
+            color: #232323;
+            line-height: 24px;
+            font-weight: 400;
             margin: 0;
-            padding-top: 19px;
-            padding-right: 15px;
-            padding-bottom: 15px;
-
+            padding: 15px;
         }
 
         .picture {
-            height: 50%;
-            width: 100%;
-            right: 0;
-            top: 0;
-            position: absolute;
-
+            width: 50%;
+            margin: 0;
+            float: left;
+            margin: 0;
+            padding-left: 70px;
+            box-sizing: border-box;
         }
 
         .photoedit {
-            width: 45%;
-            top: 0;
-            right: 0;
-            padding-top: 95px;
-            position: absolute;
-            margin: 0;
+            margin-top: 120px;
         }
 
         .more {
@@ -643,10 +648,17 @@
         }
 
         .icon {
-            top: 580px;
-            left: 40px;
-            position: absolute;
-            font-size: 40px;
+            float: left;
+            margin: 0;
+            padding-top: 10px;
+            padding-left: 15px;
+            font-size: 30px;
+            letter-spacing: 7px;
+            color: #333;
+        }
+
+        .orange {
+            color: orange;
         }
 
         .taskbar {
@@ -658,12 +670,16 @@
         }
 
         .taskbar h3 {
+            font-size: 20px;
+            font-family: "Dosis", sans-serif;
             color: aliceblue;
             text-align: center;
         }
 
         .fonticon1 {
-            font-size: 25px;
+            font-size: 35px;
+            letter-spacing: 7px;
+            color: #00d9ff85;
         }
 
     </style>
@@ -805,24 +821,24 @@
         <div class="document">
             <h1> ABOUT ME </h1>
             <h2>I AM A PHOTOGRAPHER & DESIGNER</h2>
-            <p>Dedicated and energised professional photographer with 7+ years' comprehensive experience in customized and also specialized photography. Experienced in catching premium quality images and arranging products for photoshoots while displaying self-confidence and professionalism and trust in any way times. Proficient with different kinds of photography including style, wildlife and undersea due to HTML Personal Website Template. Extensive knowledge of working with innovative digital photography tools.</p>
+            <h3>Dedicated and energised professional photographer with 7+ years' comprehensive experience in customized and also specialized photography. Experienced in catching premium quality images and arranging products for photoshoots while displaying self-confidence and professionalism and trust in any way times. Proficient with different kinds of photography including style, wildlife and undersea due to HTML Personal Website Template. Extensive knowledge of working with innovative digital photography tools.</h3>
 
-            <p>&#10004; Specialized in high-speed digital photography for motorsports from regional to nationwide degree series</p>
-            <p>&#10004; Provided a full variety of imaging requires from commercial, also graphic arts</p>
-            <p>&#10004; Designed as well as provided proposals to broad spectrum customers</p>
-            <p>&#10004; Oversaw all aspects of workshop work as HTML Personal Page Template developer</p>
-            <div class="icon"></div>
+            <p><span class="orange">&#10004;</span>Specialized in high-speed digital photography for motorsports from regional to nationwide degree series</p>
+            <p><span class="orange">&#10004;</span>Provided a full variety of imaging requires from commercial, also graphic arts</p>
+            <p><span class="orange">&#10004;</span>Designed as well as provided proposals to broad spectrum customers</p>
+            <p><span class="orange">&#10004;</span>Oversaw all aspects of workshop work as HTML Personal Page Template developer</p>
+            <div class="icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fas fa-wifi"></i>
+            </div>
         </div>
         <div class="picture">
             <image src="images/clickphoto" class="photoedit"></image>
         </div>
-        <div class="icon">
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fas fa-wifi"></i>
-        </div>
+
     </div>
     <div class="taskbar">
         <h3>Personal Website HTML Template. Powered by <span class="more">Mobirise.com</span></h3>
